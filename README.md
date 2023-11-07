@@ -46,3 +46,8 @@ ________________________________________________________________________________
 * in progress...
 
 ____________________________________________________________________________________________
+
+### RESOURCES
+
+* Original dataset source : https://www.kaggle.com/code/encode0/diabetes-prediction-and-risk-factors-evaluation/input?select=diabetes_012_health_indicators_BRFSS2015.csv
+* 
