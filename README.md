@@ -19,13 +19,21 @@ ________________________________________________________________________________
 
 ### CONTENTS IN THIS REPOSITORY
 
-* 
+* Resources folder
+* Jupyter Notebook folder
+* Images Folder
+* Tableau File + weblink
+  
 
 ____________________________________________________________________________________________
 
 ### PROJECT OUTLINE
 
-* 
+* Identify risk factors with feature_importance, KerasTuners, and neural networks for a baseline
+* Upload modified dataframe to SQL 
+* Optimize the model and use SKLearn to compare features
+* Create vizualizations utilizing Tableau
+  
 
 ____________________________________________________________________________________________
 
@@ -50,4 +58,3 @@ ________________________________________________________________________________
 ### RESOURCES
 
 * Original dataset source : https://www.kaggle.com/code/encode0/diabetes-prediction-and-risk-factors-evaluation/input?select=diabetes_012_health_indicators_BRFSS2015.csv
-* 
