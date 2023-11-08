@@ -19,13 +19,21 @@ ________________________________________________________________________________
 
 ### CONTENTS IN THIS REPOSITORY
 
-* 
+* Resources folder
+* Jupyter Notebook folder
+* Images Folder
+* Tableau File + weblink
+  
 
 ____________________________________________________________________________________________
 
 ### PROJECT OUTLINE
 
-* 
+* Identify risk factors with feature_importance, KerasTuners, and neural networks for a baseline
+* Upload modified dataframe to SQL 
+* Optimize the model and use SKLearn to compare features
+* Create vizualizations utilizing Tableau
+  
 
 ____________________________________________________________________________________________
 
