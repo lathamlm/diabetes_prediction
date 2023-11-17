@@ -99,13 +99,48 @@ ________________________________________________________________________________
         ![model_4_results.png](Images/model_4_summary.png)
         
         ![model_4_results.png](Images/model_4_results.png)
+        <br>
+
+* Random Forests
+    1. Model 1 - clean data with all features - shows confusion matrix and accuracy report
+
+        ![confusion_matrix.png](Images/confusion_matrix.png)
+
+    2. Feature Importances based on Model 1
+
+        ![feature_importances.png](Images/feature_importances.png)
+
+    3. Model 2 - clean data with top 10 features based on Feature Importances - shows confusion matrix and accuracy report
+
+        We lost around 1.5% accuracy when limiting to top ten features.
+
+        ![confusion_matrix_2.png](Images/confusion_matrix_2.png)
+        <br>
+
+* KMeans
+    1. BMI and age comparison
+
+        ![KMeans_bmi_age.png](Images/KMeans_bmi_age.png)
+
+    2. BMI and income comparison
+
+        ![KMeans_bmi_income.png](Images/KMeans_bmi_income.png)
+
+    3. BMI and physical health comparison
+
+        ![KMeans_bmi_phys.png](Images/KMeans_bmi_phys.png)
 
 ____________________________________________________________________________________________
 
 ### SUMMARY
 
-* in progress...
+* Starting with the original uncleaned data, we saw 32% improvement in accuracy for a final accuracy score of 86.4% in the optimized neural network models. This was accomplished by removing the pre-diabetes category, converting all features to integers, and scaling the data. Of note, there were significant differences in accuracy when comparing `0 - no diabetes` (~92% accuracy) with `1 - diabetes` (~28% accuracy) using Random Forests. This may be impacted by multiple factors, including the difference in volume in the training and testing data, gestational diabetes cases being included in the `0 - no diabetes` columns, and multiple columns containing imbalanced responses. We that used Feature Importances to identify the best feattures. We also utilized KMeans to visualize 
 
+We utilized Tableau to visualize the four most influential features in the dataset (BMI, age, income, and physical health).  During this analysis, we noticed both BMI and age had a positive correlation - as age and BMI increase, the risk for diabetes also increases.  Income had a negative correlation, with an increased risk of diabetes occuring below the national poverty line (~$25,000) and decreasing as income increased.  Physical health data was heavily skewed with 0 days unwell, so we removed it from the visualization to better illustrate the comparison between the rest of the month.  This showed 30 days unwell had the highest percentage of patients with diabetes at (30.4% population)
+
+As mentioned earlier, gestational diabetes was included in the `no diabetes` category but was not identified so we were unable to isolate those and determine its impact on the data.  Overall accuracy for the diabetes population was low (~28%).  This may have been impacted by undiagnosed cases, which comprise approximately 20% of the diabetic population. Since this dataset was gathered via survey, undiagnosed patients may have answered as `0 - no diabetes` when the did have diabetes.  This would make it more difficult for the model to accurately identify cases.
+
+This dataset offered a good overall baseline for diabetes identification, but it lacked additional factors that may have allowed for optimization.  We would like to have seen data on lab values, family history, medications, and more detailed diet information.
 ____________________________________________________________________________________________
 
 ### RESOURCES
