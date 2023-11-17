@@ -47,13 +47,13 @@ ________________________________________________________________________________
 
 We started by uploading the cleaned data via spark and converted to a Pandas DataFrame as seen below.
 
-!(spark_df.png)[Images/spark_df.png]
+![spark_df.png](Images/spark_df.png)
 
-2. Profile Report (Ydata)
+2. Profile Report (Ydata Profiling)
 
 We created a summary statistics report using the cleaned data as seen below.  This provided a lot of information about the columns and correlation between them.
 
-!(stats_report.png)[Images/stats_report.png]
+![stats_report.png](Images/stats_report.png)
 
 2. TABLEAU
 
@@ -69,13 +69,25 @@ The Tableau workbook can be found at this site https://public.tableau.com/app/pr
         We also ran two Random Forest models.  The first utilized all 21 features from the cleaned dataset.  We then used this model to identify Feature Importances.  Then we chose only the top 10 features from the Feature Importances analysis for the second Random Forest model.
 
     * KMeans
-        We ran three KMeans models to compare the top four features.
+        We ran three KMeans models to compare the top four features, looking at BMI-age, BMI-income, and BMI-physical health.
 
 ____________________________________________________________________________________________
 
 ### RESULTS
 
-* in progress...
+* Neural Networks
+    1. Model 1 - baseline uncleaned data
+    ![model_1_results.png](Images/model_1_results.png)
+
+    2. Model 2 - baseline uncleaned data with one dropped column `NoDocbcCost`
+    ![model_2_results.png](Images/model_2_results.png)
+
+    3. Model 3 - cleaned data
+    ![model_3_results.png](Images/model_3_results.png)
+
+    4. Model 4 - cleaned data with optimized KerasTuner model
+    ![model_4_results.png](Images/model_4_results.png)
+
 
 ____________________________________________________________________________________________
 
