@@ -77,17 +77,28 @@ ________________________________________________________________________________
 
 * Neural Networks
     1. Model 1 - baseline uncleaned data
-    ![model_1_results.png](Images/model_1_results.png)
+
+        ![model_1_summary.png](Images/model_1_summary.png)
+
+        ![model_1_results.png](Images/model_1_results.png)
 
     2. Model 2 - baseline uncleaned data with one dropped column `NoDocbcCost`
-    ![model_2_results.png](Images/model_2_results.png)
+
+        ![model_2_summary.png](Images/model_2_summary.png)
+        
+        ![model_2_results.png](Images/model_2_results.png)
 
     3. Model 3 - cleaned data
-    ![model_3_results.png](Images/model_3_results.png)
+
+        ![model_3_results.png](Images/model_3_summary.png)
+        
+        ![model_3_results.png](Images/model_3_results.png)
 
     4. Model 4 - cleaned data with optimized KerasTuner model
-    ![model_4_results.png](Images/model_4_results.png)
 
+        ![model_4_results.png](Images/model_4_summary.png)
+        
+        ![model_4_results.png](Images/model_4_results.png)
 
 ____________________________________________________________________________________________
 
